@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<%# ici, ce que récupère la vue, c'est {
+    "name": "ettehcruof",
+    "title": "Jeu de la ettehcruof",
+    "cssFile": "ettehcruof.css",
+    "jsFile": null,
+    "message": un message qui dépendra de la requête,
+    "buttons": le petit nom d'un partial, qui dépendra aussi de la requête,
+    "games": dispo tout le temps pour générer les liens dans le menu
+  } %>
+
+<h1>Jeu de la ettehcruof</h1>
+
+<p><%= message %></p>
+
+<section id="responses">
+    <%- include('partials/' + buttons) %>
+</section>
+
+<%- include('partials/footer') %>
